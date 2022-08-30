@@ -37,6 +37,10 @@ dependencies:
   workmanager: ^0.5.0
   battery_plus: ^2.1.4+1
   vibration: ^1.7.5
+  optimize_battery: ^0.0.4
+  flutter_local_notifications: ^9.9.0
+  rxdart: ^0.27.5
+  get_storage: ^2.0.3
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +66,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/charge_full.mp3
+    - assets/charge_full.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
