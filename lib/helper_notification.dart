@@ -14,9 +14,14 @@ class NotificationHelper {
 
   static Future _notificationsDetails() async {
     return const NotificationDetails(
-        android: AndroidNotificationDetails("channel id", "channel name",
+        android: AndroidNotificationDetails("15", "chargenotifier",
+            playSound: true,
+            sound: RawResourceAndroidNotificationSound('charge_full'),
             channelDescription: "channel description",
             importance: Importance.max,
+            priority: Priority.max,
+            enableVibration: true,
+            enableLights: true,
             icon: "@mipmap/ic_launcher"),
         iOS: IOSNotificationDetails());
   }
